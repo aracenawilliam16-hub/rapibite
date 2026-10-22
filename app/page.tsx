@@ -244,7 +244,13 @@ export default function Home() {
               <button
                 className="navbtn"
                 key={enlace}
-                onClick={() => setPagina(enlace)}
+                onClick={() => {
+  if (enlace === "Mi cuenta") {
+    window.location.href = "/cuenta";
+  } else {
+    setPagina(enlace);
+  }
+}}
               >
                 {enlace}
               </button>
