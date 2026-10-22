@@ -59,6 +59,7 @@ export default function Registro() {
         if (error) throw error;
 
         setMensaje("¡Bienvenido a RapiBite! Sesión iniciada.");
+window.location.replace("/");
       }
     } catch (error) {
       setMensaje(
